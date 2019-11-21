@@ -1,0 +1,33 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ycl.fileselector">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+
+        <provider
+            android:name=".provider.FileSelectorProvider"
+            android:authorities="${applicationId}.selector-provider"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <activity
+            android:name=".ui.FileSelectorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.preview.image.ImagePreviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.preview.audio.AudioPreviewActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".ui.preview.video.VideoPreviewActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>
