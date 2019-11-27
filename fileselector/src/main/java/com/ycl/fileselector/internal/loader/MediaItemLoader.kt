@@ -161,14 +161,14 @@ class MediaItemLoader private constructor(
             |AND ${MediaStore.MediaColumns.SIZE}>0
             """.trimMargin()
         private val DOCUMENTS_SELECTION_ARGS = arrayOf(
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("TXT")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("HTM")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("HTML")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("PDF")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("DOC")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("XLS")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("PPT")!!,
-            MimeTypeMap.getSingleton().getMimeTypeFromExtension("ZIP")!!
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("TXT"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("HTM"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("HTML"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("PDF"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("DOC"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("XLS"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("PPT"),
+            MimeTypeMap.getSingleton().getMimeTypeFromExtension("ZIP")
         )
         private const val DOCUMENTS_ORDER_BY = "${MediaStore.Files.FileColumns.DATE_ADDED} DESC"
         private val DOCUMENTS_QUERY_URI = MediaStore.Files.getContentUri("external")
@@ -193,7 +193,7 @@ class MediaItemLoader private constructor(
                         context,
                         IMAGE_QUERY_URI,
                         IMAGES_PROJECTION,
-                        getImageSelection(spec.alreadySelectedIds,spec.minMediaSize),
+                        getImageSelection(spec.alreadySelectedIds, spec.minMediaSize),
                         IMAGE_SELECTION_ARGS,
                         IMAGES_ORDER_BY
                     )
@@ -226,7 +226,7 @@ class MediaItemLoader private constructor(
                         DOCUMENTS_QUERY_URI,
                         DOCUMENTS_PROJECTION,
                         DOCUMENTS_SELECTION,
-                        DOCUMENTS_SELECTION_ARGS,
+                        DOCUMENTS_SELECTION_ARGS.filterNotNull().toTypedArray(),
                         DOCUMENTS_ORDER_BY
                     )
                 }
