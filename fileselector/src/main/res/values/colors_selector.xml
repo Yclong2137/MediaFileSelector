@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2018 Li Zhao Tai Lang
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+
+<resources>
+
+    <color name="selector_primary">#4477EF</color>
+    <color name="selector_primary_dark">#4477EF</color>
+
+    <color name="selector_toolbar_title">#FFFFFF</color>
+    <color name="selector_categories_popup_background">#FFFFFF</color>
+    <color name="selector_categories_dropdown_title">#000000</color>
+    <color name="selector_categories_dropdown_icon_tint">#000000</color>
+
+    <color name="selector_media_icon">#FFFFFF</color>
+    <color name="selector_media_title">#212121</color>
+    <color name="selector_media_desc">#757575</color>
+    <color name="selector_empty_view_text">#4D000000</color>
+    <color name="selector_check_view_background">#1E8AE8</color>
+    <color name="selector_check_view_border">#1E8AE8</color>
+
+    <color name="selector_page_background">#FFFFFF</color>
+
+    <color name="selector_bottom_toolbar_background">#FFFFFF</color>
+    <color name="selector_bottom_toolbar_progress_text">#DE000000</color>
+    <color name="selector_bottom_toolbar_apply_text">#0077D9</color>
+    <color name="selector_bottom_toolbar_apply_text_disable">#4D0077D9</color>
+
+    <color name="selector_item_background_selected">#4d3367d6</color>
+
+    <color name="selector_ic_back_press">#323336</color>
+    <color name="selector_ip_color_primary">#393A3F</color>
+    <color name="selector_ip_color_primary_dark">#303135</color>
+    <color name="selector_ip_color_primary_trans">#ec2f3335</color>
+    <color name="selector_ip_color_press">#ffe0e0e0</color>
+    <color name="selector_ip_camera_pre">#353535</color>
+    <color name="selector_ip_color_accent">#6c97fd</color>
+    <color name="selector_ip_text_secondary_inverted">#66ffffff</color>
+    <color name="selector_ip_text_primary_inverted">#ffffff</color>
+
+</resources>
