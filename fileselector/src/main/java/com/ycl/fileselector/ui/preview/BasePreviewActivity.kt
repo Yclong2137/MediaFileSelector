@@ -69,9 +69,9 @@ abstract class BasePreviewActivity : AppCompatActivity(), View.OnClickListener, 
         iPageAdapter = providerAdapter()
         mViewPager.addOnPageChangeListener(this)
         mViewPager.adapter = iPageAdapter.pageAdapter
-        mViewPager.post {
+        mViewPager.postDelayed( {
             mViewPager.currentItem = provideSelectedItemCollection().position
-        }
+        },100)
         LoaderManager.getInstance(this).initLoader(0, null, this)
     }
 
