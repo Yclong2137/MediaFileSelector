@@ -39,7 +39,7 @@ class VideoPreviewFragment : Fragment() {
             val path = PathUtils.getPath(requireContext(), mediaItem.uri)
             SelectionSpec.INSTANCE.imageEngine.loadImage(
                 requireContext(),
-                video.thumbImageView, 
+                video.posterImageView,
                 mediaItem.uri
             )
             video.setUp(path, mediaItem.name)

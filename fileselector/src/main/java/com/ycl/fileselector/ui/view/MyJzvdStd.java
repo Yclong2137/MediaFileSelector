@@ -81,17 +81,17 @@ public class MyJzvdStd extends JzvdStd {
         Log.i(TAG, "Seek position ");
     }
 
-    @Override
-    public void gotoScreenFullscreen() {
-        super.gotoScreenFullscreen();
-        Log.i(TAG, "goto Fullscreen");
-    }
-
-    @Override
-    public void gotoScreenNormal() {
-        super.gotoScreenNormal();
-        Log.i(TAG, "quit Fullscreen");
-    }
+//    @Override
+//    public void gotoScreenFullscreen() {
+//        super.gotoScreenFullscreen();
+//        Log.i(TAG, "goto Fullscreen");
+//    }
+//
+//    @Override
+//    public void gotoScreenNormal() {
+//        super.gotoScreenNormal();
+//        Log.i(TAG, "quit Fullscreen");
+//    }
 
     @Override
     public void autoFullscreen(float x) {
