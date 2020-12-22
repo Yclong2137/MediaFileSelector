@@ -230,3 +230,4 @@ abstract class BasePreviewActivity : AppCompatActivity(), View.OnClickListener, 
 
 
 }
+

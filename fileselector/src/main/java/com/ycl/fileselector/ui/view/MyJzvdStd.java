@@ -93,6 +93,7 @@ public class MyJzvdStd extends JzvdStd {
 //        Log.i(TAG, "quit Fullscreen");
 //    }
 
+
     @Override
     public void autoFullscreen(float x) {
         super.autoFullscreen(x);

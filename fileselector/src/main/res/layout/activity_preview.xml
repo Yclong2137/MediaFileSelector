@@ -12,7 +12,11 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+<<<<<<< HEAD
             android:background="#FFFFFF" />
+=======
+            android:background="#111111" />
+>>>>>>> 51c4a3f4d4e79a4700b516559487f3754ecc8771
 
 
     <include layout="@layout/view_bottom_bar_preview" />
